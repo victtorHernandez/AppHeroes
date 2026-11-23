@@ -18,7 +18,10 @@ export interface Hero {
   universe: string;
 }
 
-const apiUrl = (import.meta.env.VITE_API_URL || 'http://localhost:3000').replace(
+const apiUrl = (
+  import.meta.env.VITE_API_URL ||
+  'https://heroes-app-backend-xkmr.onrender.com'
+).replace(
   /\/+$/,
   '',
 );
